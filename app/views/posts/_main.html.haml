@@ -1,0 +1,58 @@
+.Main
+  .MainContents
+    .Post
+      .Post__user
+        = link_to (image_tag "user-image.jpg", class: "Post__user--image"), "#"
+        = link_to "Ranmaru", "#", class: "Post__user--name"
+      = link_to (image_tag "user-image.jpg", class: "Post__pic"), "#"
+      .Post__icon
+        = link_to "#", class: "Post__icon--like" do
+          = icon('far', 'heart')
+          %span<>
+        %p 3
+        = link_to "#", class: "Post__icon--comment" do
+          = icon('far', 'comment')
+      .Post__text
+        .Comment__user
+          = image_tag "user-image.jpg", class: "Comment__user--image"
+          %p.Comment__user--name Ranmaru：
+        .Comment__contents
+          %p ここに文章が入ります。このまま改行しなければどうなるか試しているところです。きちんと改行されたでしょうか。。。
+
+    .Post
+      .Post__user
+        = link_to (image_tag "user-image.jpg", class: "Post__user--image"), "#"
+        = link_to "Ranmaru", "#", class: "Post__user--name"
+      = link_to (image_tag "post-image.jpg", class: "Post__pic"), "#"
+      .Post__icon
+        = link_to "#", class: "Post__icon--like" do
+          = icon('far', 'heart')
+          %span<>
+        %p 3
+        = link_to "#", class: "Post__icon--comment" do
+          = icon('far', 'comment')
+      .Post__text
+        .Comment__user
+          = image_tag "user-image.jpg", class: "Comment__user--image"
+          %p.Comment__user--name Ranmaru：
+        .Comment__contents
+          %p ここに文章が入ります。
+
+    .Post
+      .Post__user
+        = link_to (image_tag "user-image.jpg", class: "Post__user--image"), "#"
+        = link_to "Ranmaru", "#", class: "Post__user--name"
+      = link_to (image_tag "post-image2.jpg", class: "Post__pic"), "#"
+      .Post__icon
+        = link_to "#", class: "Post__icon--like" do
+          = icon('far', 'heart')
+          %span<>
+        %p 3
+        = link_to "#", class: "Post__icon--comment" do
+          = icon('far', 'comment')
+      .Post__text
+        .Comment__user
+          = image_tag "user-image.jpg", class: "Comment__user--image"
+          %p.Comment__user--name Ranmaru：
+        .Comment__contents
+          %p such a great Picstagram !!
